@@ -1,0 +1,274 @@
+@charset "utf-8"; /* memberGaib-style.css */
+
+@import url("fonts.css");
+@import url("reset.css");
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+#memberGaib{width:100%;background:#fff;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+#memberGaib #header{z-index:3;position:fixed;top:0;left:0;width:100%;margin:0;padding:0;border:0;border-bottom:1px solid #e5e5e5;background:#fff;}
+#memberGaib #header #header-wrap{width:100%;}
+/* 헤더 : 팝업창 */
+#memberGaib #header #header-wrap #header-popup{position:relative;width:100%;border-bottom:1px solid #f4f4f4;box-sizing:border-box;text-align:center;}
+#memberGaib #header #header-wrap #header-popup p{display:inline-block;font-size:14px;color:#333;font-weight:300;padding:9.5px 30px;text-shadow:none;background:url(../img/btn_arrow_333_76x76.png) no-repeat 100% 50%;background-size:auto 100%;}
+#memberGaib #header #header-wrap #header-popup p br{display:none;}
+#memberGaib #header #header-wrap #header-popup p i{color:#5f0080;font-weight:600;}
+#memberGaib #header #header-wrap #header-popup span.hPopupCloseBt-wrap{position:absolute;top:0;right:0;width:37px;height:37px;}
+#memberGaib #header #header-wrap #header-popup span.hPopupCloseBt-wrap a{display:block;}
+#memberGaib #header #header-wrap #header-popup span.hPopupCloseBt-wrap a img{width:100%;}
+/* 헤더 : 타이틀 */
+#memberGaib #header #header-wrap #header-title-wrap{position:relative;width:100%;}
+#memberGaib #header #header-wrap #header-title-wrap .header-title{position:relative;font-size:16px;color:#333;font-weight:600;padding:15px 50px;text-shadow:none;text-align:center;}
+#memberGaib #header #header-wrap #header-title-wrap .winPrevBtn-wrap{position:absolute;top:0;left:0;}
+#memberGaib #header #header-wrap #header-title-wrap .winPrevBtn-wrap a{display:block;width:50px;height:50px;}
+#memberGaib #header #header-wrap #header-title-wrap .winPrevBtn-wrap a img{width:100%;}
+#memberGaib #header #header-wrap #header-title-wrap .cartBtn-wrap{position:absolute;top:0;right:0;}
+#memberGaib #header #header-wrap #header-title-wrap .cartBtn-wrap a{display:block;width:50px;height:50px;}
+#memberGaib #header #header-wrap #header-title-wrap .cartBtn-wrap a img{width:100%;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* 푸터 하단 서치 버튼 */
+#header #modal-search-wrap{z-index:4;position:fixed;top:-100%;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);opacity:0;}	
+#header #modal-search-wrap #modal-search-content-wrap{width:100%;background:#fff;}	
+/* 상단 : 서치 폼 박스 */
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap{width:100%;background:#5f0080;}	
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap #from-search{position:relative;width:100%;padding:10px;box-sizing:border-box;}	
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap #from-search div{position:relative;width:100%;margin:0;box-shadow:none;border:0;border-radius:0;background:none;}	
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap #from-search div input.searchBox{width:100%;font-size:14px;padding:10px 50px 10px 15px;line-height:30px;text-shadow:none;background:#fff;}	
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap #from-search div input.searchBox::placeholder{color:#ccc;}	
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap #from-search span{position:absolute;top:10px;right:10px;display:inline-block;}	
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap #from-search span a.searchBoxCloseBtn{display:block;width:50px;height:50px;}	
+#header #modal-search-wrap #modal-search-content-wrap #from-search-wrap #from-search span a.searchBoxCloseBtn img{width:100%;}	
+/* 중간 : 텝 버튼 박스 */
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap{width:100%;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap #search-keyword-tab-wrap{width:100%;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap #search-keyword-tab-wrap ul{width:100%;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap #search-keyword-tab-wrap ul li{float:left;width:50%;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap #search-keyword-tab-wrap ul li a.searchTabBtn{display:block;font-size:14px;color:#666;font-weight:400;padding:16px 0 14px 0;border-bottom:1px solid #f4f4f4;text-shadow:none;text-align:center;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap #search-keyword-tab-wrap ul li a.searchTabBtn.addSearchTabBtn{color:#5f0080;font-weight:600;border-bottom:3px solid #5f0080;}
+/* 하단 : 텝 컨텐츠 박스 */
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap .search-keyword-LinkBtn-wrap{width:100%;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap .search-keyword-LinkBtn-wrap ul{width:100%;height:45px;background:#fff;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap .search-keyword-LinkBtn-wrap ul li{float:left;width:50%;}
+#header #modal-search-wrap #modal-search-content-wrap #search-keyword-wrap .search-keyword-LinkBtn-wrap ul li a.keywordLinkBtn{display:block;height:45px;font-size:14px;color:#666;font-weight:400;padding:16px 20px 14px 20px;line-height:15px;box-sizing:border-box;border-bottom:1px solid #f4f4f4;text-shadow:none;text-align:left;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+#memberGaib #content{z-index:1;position:relative;width:100%;margin:0;padding:0 0 150px 0;border:0;padding-top:89px;background:#fff;}
+#memberGaib #content.addHeaderPopup{padding-top:51px;transition:all 0.3s;}
+#memberGaib #content #content-wrap{position:relative;width:100%;}
+#memberGaib #content #content-wrap #form-wrap{width:100%;background:#f4f4f4;}
+
+#memberGaib #content #content-wrap #form-wrap #gaib{width:100%;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib{width:100%;padding-top:10px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li{width:100%;background:#fff;}
+
+/*--------------------form-memberGaib1-top--------------------*/
+
+/* 아이디, 비밀번호, 비밀번호 확인, 이름, 이메일 휴대폰 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap{padding:0 20px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap h4{font-size:14px;color:#333;font-weight:600;padding:20px 0 5px 0;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap h4 i{color:#5f0080;padding:0 2.5px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap div{display:inline-block;width:100%;margin:0;border:0;border-radius:0;background:none;box-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap div input.textBox{width:100%;height:50px;font-size:14px;padding:10px;border:1px solid #ccc;border-radius:3px;background:#fff;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap div input.textBox::placeholder{font-size:14px;color:#ccc;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap div input.textBox:focus{border:1px solid #000;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap p.hidden-text-wrap{display:none;padding:5px 2px 20px 2px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap p.hidden-text-wrap span{display:block;font-size:12px;color:#666;line-height:18px;text-shadow:none;}
+/* 아이디, 비밀번호, 비밀번호 확인, 이름, 이메일 휴대폰 (버튼 있는) */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label{margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label.addTelLabel{padding-bottom:10px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label div{float:left;display:inline-block;width:60%;margin:0;border:0;border-radius:0;background:none;box-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label div input.textBox{width:100%;height:50px;font-size:14px;padding:10px;border:1px solid #ccc;border-radius:3px;background:#fff;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label div input.textBox::placeholder{font-size:14px;color:#ccc;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label span{float:right;display:inline-block;width:40%;padding-left:2.5%;box-sizing:border-box;text-align:center;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label span a{display:block;height:50px;line-height:50px;font-size:16px;color:#fff;font-weight:400;border-radius:3px;box-sizing:border-box;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:none;background:#5f0081;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label span a.addTelBtn1{color:#fff;background:#ddd;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.text-wrap label span a.addTelBtn2{color:#ddd;background:#fff;border:1px solid #ddd;}
+/* 주소 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.address-wrap{padding:0 20px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.address-wrap h4{font-size:14px;color:#333;font-weight:600;padding-top:30px;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.address-wrap p{font-size:12px;color:#666;padding:5px 0 15px 0;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.address-wrap button{width:100%;height:50px;padding:0;margin:0;border:0;border-radius:3px;box-shadow:none;background:#5f0081;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.address-wrap button span{display:inline-block;font-size:16px;color:#fff;font-weight:400;padding:0 25px;line-height:50px;text-shadow:none;background:url(../img/ico_search_fff_40x40.png) no-repeat 0 50%;background-size:20px;}
+/* 생년월일 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.birth-wrap{padding:0 20px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.birth-wrap h4{font-size:14px;color:#333;font-weight:600;padding:30px 0 5px 0;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.birth-wrap div.birth-input-wrap{padding:10px;border:1px solid #ccc;border-radius:3px;background:#fff;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.birth-wrap div.birth-input-wrap div{float:left;width:25%;margin:0;border:0;border-radius:0;box-shadow:none;background:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.birth-wrap div.birth-input-wrap div input.birthBox{width:100%;height:35px;font-size:14px;line-height:35px;padding:0 10px 0 10px;text-shadow:none;text-align:center;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.birth-wrap div.birth-input-wrap div input.birthBox::placeholder{color:#ccc;text-align:center;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.birth-wrap div.birth-input-wrap span.bar{display:block;float:left;width:12.5%;height:35px;line-height:35px;text-align:center;text-shadow:none;}
+/* 성별 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap{padding:0 20px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap h4{font-size:14px;color:#333;font-weight:600;padding:30px 0 5px 0;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap div.gender-input-wrap{margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap div.gender-input-wrap div{position:relative;margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap div.gender-input-wrap div input{z-index:2;position:absolute;top:0;left:0;margin:0;display:block;width:16px;height:16px;margin:17px 0;background:#fff;border:1px solid #999;border-radius:50%;-webkit-appearance:none;appearance:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap div.gender-input-wrap div input.addGenderBtn{border:5px solid #5f0080;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap div.gender-input-wrap div label{font-size:14px;color:#333;font-weight:400;padding:15px 10px 15px 30px;line-height:19px;box-sizing:border-box;border:0;border-bottom:1px solid #f4f4f4;border-radius:0;text-shadow:none;background:#fff;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gender-wrap div.gender-input-wrap div label:after{content:'';display:none;}
+/* 추가 입력 사항 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap{padding:0 20px 20px 20px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap h4{font-size:14px;color:#333;font-weight:600;padding:30px 0 5px 0;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap p{font-size:12px;color:#666;padding:5px 0;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap{margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap{width:100%;border-bottom:1px solid #f4f4f4;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div{position:relative;margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div input.addInputBtn{z-index:2;position:absolute;top:0;left:0;margin:0;display:block;width:16px;height:16px;margin:17px 0;background:#fff;border:1px solid #999;border-radius:50%;-webkit-appearance:none;appearance:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div input.addInputBtn.addAddInputBtn{border:5px solid #5f0080;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div label{font-size:14px;color:#333;font-weight:400;padding:15px 10px 15px 30px;line-height:19px;box-sizing:border-box;border:0;border-radius:0;text-shadow:none;background:#fff;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div label:after{content:'';display:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div.hidden-inputBox-wrap{display:none;width:100%;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div.hidden-inputBox-wrap div{margin:0;border:0;border-radius:0;box-shadow:none;background:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div.hidden-inputBox-wrap div input.addInputTextBox{width:100%;height:50px;font-size:14px;padding:10px;border:1px solid #ccc;border-radius:3px;text-shadow:none;box-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div.hidden-inputBox-wrap div input.addInputTextBox::placeholder{color:#ccc;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.addInput-wrap div.addInput-input-wrap div.addInput-input-content-wrap div.hidden-inputBox-wrap p{font-size:12px;color:#666;padding:5px 2px 10px 2px;line-height:18px;text-shadow:none;}
+
+/*--------------------form-memberGaib2-bottom-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* 이용약관동의 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap{padding:0 20px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap h4{font-size:14px;color:#333;font-weight:600;padding:20px 0;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap h4 i{color:#5f0080;padding:0 2.5px;}
+/* 체크박스 올 어그리 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap .agreeAllCheckBtn-wrap{width:100%;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap .agreeAllCheckBtn-wrap div{position:relative;display:inline-block;margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap .agreeAllCheckBtn-wrap div input.agreeAllCheckBtn{z-index:2;position:absolute;top:0;left:0;margin:2px 0;width:16px;height:16px;border:1.5px solid #999;border-radius:3px;box-sizing:border-box;-webkit-appearance:none;appearance:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap .agreeAllCheckBtn-wrap div input.agreeAllCheckBtn.addAgreeAllCheck{border:1.5px solid #5f0080;background:#5f0080 url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap .agreeAllCheckBtn-wrap div label{display:inline-block;font-size:14px;color:#333;font-weight:400;line-height:20px;padding:0 0 0 25px;border:0;border-radius:0;background:#fff;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.agree-wrap .agreeAllCheckBtn-wrap div label:after{content:'';display:none;}
+/* 체크박스 칠드런 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap{padding:20px 0 0 25px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap{padding-bottom:10px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap div{float:left;position:relative;display:inline-block;margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap div input.agreeCheckBtn{z-index:2;position:absolute;top:0;left:0;margin:2px 0;width:16px;height:16px;border:1.5px solid #999;border-radius:3px;box-sizing:border-box;-webkit-appearance:none;appearance:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap div input.agreeCheckBtn.addAgreeCheck{border:1.5px solid #5f0080;background:#5f0080 url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap div label{display:inline-block;font-size:14px;color:#333;font-weight:400;line-height:20px;padding:0 0 0 25px;border:0;border-radius:0;text-shadow:none;background:#fff;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap div label:after{content:'';display:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap div label span{display:inline-block;color:#999;line-height:20px;padding-left:5px;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-link-wrap a.checkBoxLink{float:right;font-size:14px;color:#5f0080;font-weight:400;line-height:20px;padding-right:15px;text-shadow:none;background:url(../img/ico_arrow_5f0080_16x22.png) no-repeat 100% 2.5px;background-size:8px 12px;}
+/* 체크박스 칠드런--(수신 체크박스) */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap{padding-bottom:10px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div{display:inline-block;margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div input.agreeCheckBtn{z-index:2;position:absolute;top:0;left:0;margin:2px 0;width:16px;height:16px;border:1.5px solid #999;border-radius:3px;box-sizing:border-box;-webkit-appearance:none;appearance:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div input.agreeCheckBtn.addAgreeCheck{border:1.5px solid #5f0080;background:#5f0080 url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div label{display:inline-block;font-size:14px;color:#333;font-weight:400;line-height:20px;padding:0 0 0 25px;border:0;border-radius:0;text-shadow:none;background:#fff;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div label:after{content:'';display:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div label span{display:inline-block;color:#999;line-height:20px;padding-left:5px;text-shadow:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div label br{display:none;}
+/* 체크박스 칠드런--(수신 체크박스)--(SMS, 이메일 체크박스) */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap{display:block;padding:10px 0 0 25px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-input-wrap{display:block;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-input-wrap div{display:inline-block;margin:0;width:30%;max-width:128px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-input-wrap div input.agreeCheckBtn{z-index:2;position:absolute;top:0;left:0;margin:2px 0;width:16px;height:16px;border:1.5px solid #999;border-radius:3px;box-sizing:border-box;-webkit-appearance:none;appearance:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-input-wrap div input.agreeCheckBtn.addAgreeCheck{border:1.5px solid #5f0080;background:#5f0080 url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-input-wrap div label{display:inline-block;font-size:14px;color:#333;font-weight:400;line-height:20px;padding:0 0 0 25px;border:0;border-radius:0;text-shadow:none;background:#fff;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-input-wrap div label:after{content:'';display:none;}
+/* 체크박스 칠드런--(수신 체크박스)--(이미지) */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-img-wrap{width:100%;padding-top:5px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div.checkBox-reception-child-wrap div.checkBox-reception-child-img-wrap img{width:198px;}
+/* 체크박스 칠드런--(14세 이상 체크박스) */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-fourteen-wrap{width:100%;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-fourteen-wrap div{display:inline-block;margin:0;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-fourteen-wrap div input.agreeCheckBtn{z-index:2;position:absolute;top:0;left:0;margin:2px 0;width:16px;height:16px;border:1.5px solid #999;border-radius:3px;box-sizing:border-box;-webkit-appearance:none;appearance:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-fourteen-wrap div input.agreeCheckBtn.addAgreeCheck{border:1.5px solid #5f0080;background:#5f0080 url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-fourteen-wrap div label{display:inline-block;font-size:14px;color:#333;font-weight:400;line-height:20px;padding:0 0 0 25px;border:0;border-radius:0;text-shadow:none;background:#fff;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-fourteen-wrap div label:after{content:'';display:none;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-fourteen-wrap div label span{display:inline-block;color:#999;line-height:20px;padding-left:5px;text-shadow:none;}
+
+/* 서브밋 버튼*/
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gaibBtn-wrap{padding:20px 20px 0 20px;text-align:center;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.gaibBtn-wrap a.gaibBtn{display:block;height:50px;line-height:50px;box-sizing:border-box;font-size:16px;color:#fff;font-weight:400;border:1px solid #5f0080;border-radius:3px;background:#5f0080;margin:0;text-shadow:none;box-shadow:none;}
+
+/* 푸터 가이드 */
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.footer-guide{padding:10px 30px;text-align:center;}
+#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.footer-guide p{font-size:12px;color:#666;line-height:140%;text-shadow:none;}
+
+/*-------------------Go Top Button--------------------------------------------------------------------------------------------------------------*/
+#memberGaib #content #goTopBtn-wrap{display:none;z-index:4;position:fixed;bottom:60px;right:10px;}
+#memberGaib #content #goTopBtn-wrap a.goTopBtn{display:block;width:46px;height:46px;border-radius:50%;background:url(../img/btn_pagetop_v3.png) no-repeat 50% 50%;background-size:46px;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+#memberGaib #footer{z-index:2;position:fixed;bottom:0;left:0;width:100%;margin:0;padding:0;border:0;background:#fff;}
+#memberGaib #footer #footer-wrap{width:100%;}
+
+/* 푸터 FIXED */
+#memberGaib #footer #footer-wrap #footer-fixed-wrap{width:100%;}
+#memberGaib #footer #footer-wrap #footer-fixed-wrap .footer-nav{width:100%;border-top:1px solid #ddd;}
+#memberGaib #footer #footer-wrap #footer-fixed-wrap .footer-nav ul{width:100%;}
+#memberGaib #footer #footer-wrap #footer-fixed-wrap .footer-nav ul li{float:left;width:25%;height:48px;}
+#memberGaib #footer #footer-wrap #footer-fixed-wrap .footer-nav ul li a{display:block;width:100%;padding:4px 0 20px 0;}
+#memberGaib #footer #footer-wrap #footer-fixed-wrap .footer-nav ul li a span{position:relative;display:block;width:100%;height:24px;}
+                                          
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(1) a span{background:url(../img/ico_home.png) no-repeat 50% 0;background-size:24px 25px;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(1) a.addFootNavBtn>span{background:url(../img/ico_home_on.png) no-repeat 50% 0;background-size:24px 25px;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(1) a span:before{content:'홈';display:block;position:absolute;bottom:-16px;left:0;width:100%;text-align:center;font-size:10px;color:#212121;font-weight:400;text-shadow:none;}
+                                                          
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(2) a span{background:url(../img/ico_cate.png) no-repeat 50% 0;background-size:25px auto;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(2) a.addFootNavBtn>span{background:url(../img/ico_cate_on.png) no-repeat 50% 0;background-size:24px 25px;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(2) a span:before{content:'카테고리';display:block;position:absolute;bottom:-16px;left:0;width:100%;text-align:center;font-size:10px;color:#212121;font-weight:400;text-shadow:none;}
+                                                           
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(3) a span{background:url(../img/ico_search.png) no-repeat 50% 0;background-size:25px auto;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(3) a.addFootNavBtn>span{background:url(../img/ico_search_on.png) no-repeat 50% 0;background-size:24px 25px;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(3) a span:before{content:'검색';display:block;position:absolute;bottom:-16px;left:0;width:100%;text-align:center;font-size:10px;color:#212121;font-weight:400;text-shadow:none;}
+                                                        
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(4) a span{background:url(../img/ico_mypage.png) no-repeat 50% 0;background-size:25px auto;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(4) a.addFootNavBtn>span{background:url(../img/ico_mypage_on.png) no-repeat 50% 0;background-size:24px 25px;}
+#memberGaib #footer #footer-fixed-wrap .footer-nav ul li:nth-child(4) a span:before{content:'마이컬리';display:block;position:absolute;bottom:-16px;left:0;width:100%;text-align:center;font-size:10px;color:#212121;font-weight:400;text-shadow:none;}
+                  
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (max-width:500px){
+	#memberGaib #header #header-wrap #header-popup p{padding:9.5px 50px;background:url(../img/btn_arrow_333_76x76.png) no-repeat 100% 50%;background-size:auto 100%;}
+	#memberGaib #header #header-wrap #header-popup p br{display:block;}
+	
+	#memberGaib #content{padding-top:107px;}
+	#memberGaib #content.addHeaderPopup{padding-top:51px;transition:all 0.3s;}
+}
+
+@media all and (max-width:370px){
+	#memberGaib #content #content-wrap #form-wrap #gaib .form-memberGaib li div.checkBox-child-wrap div.checkBox-reception-wrap div label br{display:block;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

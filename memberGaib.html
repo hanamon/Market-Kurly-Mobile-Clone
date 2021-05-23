@@ -1,0 +1,368 @@
+<!DOCTYPE HTML> <!-- 웹앱 : 마켓컬리 : 회원가입 PHP --> 
+<html lang='ko'>
+<head>
+	<title>마켓컬리 :: 회원가입</title>
+	
+	<meta charset='utf-8'>
+	<meta name='Viewport' 		  content='width=device-width, initial-scale=1.0'>
+	<meta name='format-detection' content='telephone=no'>
+	<meta name='Title' 		 	  content='마켓컬리'>
+	<meta name='Subject' 	 	  content='마켓컬리 웹앱 | 회원가입'>
+	<meta name='Keywords' 	 	  content='다이어트, 식단, 닭가슴살, 요리, 치아바타, 레시피, 요리, 상차림, 다이어트음식, 이유식, 건강이유식'>
+	<meta name='Description' 	  content='샛별이 뜰 때가 가장 신선할 때! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!'>
+	<meta name='Classification'   content='인터넷 종합 쇼핑몰'>
+	<meta name='Publisher' 	 	  content='Park Hana'>
+	<meta name='Author' 	 	  content='마켓컬리'>
+	<meta name='Author-Date' 	  content='2019-09-24'>
+	<meta name='Copyright'   	  content='마켓컬리'>
+	<meta name='Location'    	  content='Seoul Korea'>
+	<meta name='Robots'   	 	  content='index, follow'>
+	
+	<link rel='shortcut icon' 	 href='img/Icon-60@2x.png'>
+	<link rel='apple-touch-icon' href='img/apple-icon-180x180.png'>
+	
+	<link rel='stylesheet' href='css/lib/jquery.mobile-1.4.5.min.css'>
+	<link rel='stylesheet' href='css/memberGaib-style.css'>
+	
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<script src='js/lib/jquery.mobile-1.4.5.min.js'></script>
+	<script src='js/lib/PHP_jQuery_Mobile_link.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+	
+	<!-- User JS file -->
+	<script src='js/memberGaib.js'></script>
+	<script src='js/formGaib.js'></script>
+	<script src='js/ajaxPHPSQL.js'></script>
+	
+	<!-- IE 하위버전 폴리필 조건 주석문 -->
+	<!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+	<![endif]-->
+	<!--[if (lte IE 8)]>
+		<script src='js/lib/html5shiv.min.js'></script>	
+		<script src='js/lib/PIE.js'></script>	
+		<script src='js/lib/jqPIE.js'></script>		
+	<![endif]-->
+</head>
+<body>
+	<!-- page1 -->
+	<div data-role='page' id='memberGaib'>
+		<div data-role='header' id='header'>
+			<div id='header-wrap'>
+				<div id='header-popup'>
+					<p>지금 가입하고 인기상품 <br><i>100원</i>에 받아가세요!</p>
+					<span class='hPopupCloseBt-wrap'><a href='javascript:' class='hPopupCloseBt' title='Close'><img src='img/btn_close_333_76x76_v2.png' alt='Popup Close Button'></a></span>
+				</div>
+				<div id='header-title-wrap'>
+					<h1 class='header-title'>회원가입</h1>
+					<span class='winPrevBtn-wrap'>
+						<a href='myKurly.html' class='winPrevBtn moveBtn' title='Prev Button'>
+							<img src='img/ico_prev_333_100x100.png' alt='Prev Button'>
+						</a>
+					</span>
+					<span class='cartBtn-wrap'>
+						<a href='javascript:' class='cartBtn' title='Prev Button'>
+							<img src='img/ico_cart_333_100x100.png' alt='Cart Button'>
+						</a>
+					</span>
+				</div>
+			</div>
+			<div id='modal-search-wrap'>
+				<div id='modal-search-content-wrap'>
+					<div id='from-search-wrap'>
+						<form name='from-search' id='from-search' action='search.php' method='post'>
+							<input type='text' name='search' id='search' class='searchBox' value='' placeholder='검색어를 입력해주세요.'>
+							<span class='searchBoxCloseBtn-wrap'><a href='javascript:' class='searchBoxCloseBtn' title='Close Button'><img src='img/btn_close_333_76x76_v2.png' alt='Close Button'></a></span>
+						</form>
+					</div>
+					<div id='search-keyword-wrap'>
+						<div id='search-keyword-tab-wrap'>
+							<ul class='floatclear'>
+								<li><a href='javascript:' class='searchTabBtn addSearchTabBtn'>인기 검색어</a></li>
+								<li><a href='javascript:' class='searchTabBtn'>최근 검색어</a></li>
+							</ul>
+						</div>
+						<div class='search-keyword-LinkBtn-wrap'>
+							<ul class='floatclear'>
+								<li><a href='javascript:' class='keywordLinkBtn'>생수</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>건강식품</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>복숭아</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>생수</a></li>
+							</ul>
+						</div>
+						<div class='search-keyword-LinkBtn-wrap'>
+							<ul class='floatclear'>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-role='content' id='content'>	
+			<div id='content-wrap'>
+				<div id='form-wrap'>
+					<form name='gaib' id='gaib' action='myKurly.html' method='post'>
+						<ul id='form-memberGaib1' class='form-memberGaib'>
+							<li>
+								<div class='text-wrap'>
+									<h4>아이디<i>*</i></h4>
+									<label class='floatclear'>
+										<input type='text' name='id' id='id' class='textBox' value='' placeholder='예: marketkurly12'>
+										<span><a href='javascript:' class='overlapBtn'>중복확인</a></span>
+									</label>
+									<p class='hidden-text-wrap'>
+										<span>6자 이상의 영문 혹은 영문과 숫자를 조합</span>
+										<span>아이디 중복확인</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class='text-wrap'>
+									<h4>비밀번호<i>*</i></h4>
+									<input type='password' name='pass' id='pass' class='textBox' value='' placeholder='비밀번호를 입력해주세요'>
+									<p class='hidden-text-wrap'>
+										<span>10자 이상 입력</span>
+										<span>영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</span>
+										<span>동일한 숫자 3개 이상 연속 사용 불가</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class='text-wrap'>
+									<h4>비밀번호 확인<i>*</i></h4>
+									<input type='password' name='passCheck' id='passCheck' class='textBox' value='' placeholder='비밀번호를 한번 더 입력해주세요'>
+									<p class='hidden-text-wrap'>
+										<span>동일한 비밀번호를 입력해주세요</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class='text-wrap'>
+									<h4>이름<i>*</i></h4>
+									<input type='text' name='name' id='name' class='textBox' value='' placeholder='고객님의 이름을 입력해주세요'>
+								</div>
+							</li>
+							<li>
+								<div class='text-wrap'>
+									<h4>이메일<i>*</i></h4>
+									<input type='email' name='email' id='email' class='textBox' value='' placeholder='예: marketkurly@kurly.com'>
+								</div>
+							</li>
+							<li>
+								<div class='text-wrap'>
+									<h4>휴대폰<i>*</i></h4>
+									<label class='floatclear addTelLabel'>
+										<input type='tel' name='inNumber' id='inNumber' class='textBox' value='' placeholder="'-' 없이 숫자만">
+										<span><a href='javascript:' class='inNumberBtn addTelBtn1'>인증번호 받기</a></span>
+									</label>
+									<label class='floatclear'>
+										<input type='text' name='inNumberCheck' id='inNumberCheck' class='textBox' value='' placeholder=''>
+										<span><a href='javascript:' class='inNumberCheckBtn addTelBtn2'>인증번호 확인</a></span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class='address-wrap'>
+									<h4>배송주소</h4>
+									<p>배송 가능 여부를 확인할 수 있습니다.</p>
+									<button><span>주소 검색</span></button>
+								</div>
+							</li>
+							<li>
+								<div class='birth-wrap'>
+									<h4>생년월일</h4>
+									<div class='birth-input-wrap floatclear'>
+										<input type='number' name= 'birthYear'  id='birthYear'  class='birthBox' value='' placeholder='YYYY'>
+										<span class='bar'>/</span>
+										<input type='number' name= 'birthMonth' id='birthMonth' class='birthBox' value='' placeholder='MM'>
+										<span class='bar'>/</span>
+										<input type='number' name= 'birthDate'  id='birthDate'  class='birthBox' value='' placeholder='DD'>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class='gender-wrap'>
+									<h4>성별</h4>
+									<div data-role='fieldcontain' class='gender-input-wrap'>
+										<label>
+											<input type='radio' name='gender' id='fimale' class='genderBtn' value='여자'>
+											여자
+										</label>
+										<label>
+											<input type='radio' name='gender' id='male' class='genderBtn' value='남자'>
+											남자
+										</label>
+										<label>
+											<input type='radio' name='gender' id='null' class='genderBtn' value='선택안함'>
+											선택안함
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class='addInput-wrap'>
+									<h4>추가입력 사항</h4>
+									<p>추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다.</p>
+									<div data-role='fieldcontain' class='addInput-input-wrap'>
+										<div class='addInput-input-content-wrap'>
+											<label>
+												<input type='radio' name='addInput' id='recomName' class='addInputBtn' value='추천인 아이디'>
+												추천인 아이디
+											</label>
+											<div class='hidden-inputBox-wrap'>
+												<input type='text' name='recomNameTextBox' id='recomNameTextBox' class='addInputTextBox' value='' placeholder='추천인 아이디를 입력해주세요'>
+												<p>가입 이후 수정이 불가합니다. 대소문자 및 띄어쓰기에 유의해주세요.</p>
+											</div>
+										</div>
+										<div class='addInput-input-content-wrap'>
+											<label>
+												<input type='radio' name='addInput' id='eventName' class='addInputBtn' value='참여 이벤트명'>
+												참여 이벤트명
+											</label>
+											<div class='hidden-inputBox-wrap'>
+												<input type='text' name='eventNameTextBox' id='eventNameTextBox' class='addInputTextBox' value='' placeholder='참여 이벤트명을 입력해주세요'>
+												<p>가입 이후 수정이 불가합니다. 대소문자 및 띄어쓰기에 유의해주세요.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul id='form-memberGaib2' class='form-memberGaib'>
+							<li>
+								<div class='agree-wrap'>
+									<h4>이용약관동의<i>*</i></h4>
+									<div class='agreeAllCheckBtn-wrap'>
+										<label>
+											<input type='checkbox' name='agreeAllCheck' id='agreeAllCheck' class='agreeAllCheckBtn' value='전체동의'>
+											전체동의
+										</label>
+									</div>
+									<div class='checkBox-child-wrap'>
+										<div class='checkBox-link-wrap floatclear'>
+											<label>
+												<input type='checkbox' name='agrmt_chk' id='agrmt_chk' class='gaibChk agreeCheckBtn' value='이용약관(필수)'>
+												이용약관<span>(필수)</span>
+											</label>
+											<a href='javascript:' class='checkBoxLink'>약관보기</a>
+										</div>
+										<div class='checkBox-link-wrap floatclear'>
+											<label>
+												<input type='checkbox' name='private_chk' id='private_chk' class='gaibChk agreeCheckBtn' value='개인정보처리방침(필수)'>
+												개인정보처리방침<span>(필수)</span>
+											</label>
+											<a href='javascript:' class='checkBoxLink'>약관보기</a>
+										</div>
+										<div class='checkBox-link-wrap floatclear'>
+											<label>
+												<input type='checkbox' name='consentCheckValue' id='consentCheckValue' class='gaibChk agreeCheckBtn' value='개인정보처리방침(선택)'>
+												개인정보처리방침<span>(선택)</span>
+											</label>
+											<a href='javascript:' class='checkBoxLink'>약관보기</a>
+										</div>
+										<div class='checkBox-reception-wrap'>
+											<label>
+												<input type='checkbox' name='allReceptionCheck' id='allReceptionCheck' class='gaibChk agreeCheckBtn' value='무료배송, 할인쿠폰 등 혜택/정보 수신(선택)'>
+												무료배송, 할인쿠폰 등 <br>혜택/정보 수신<span>(선택)</span>
+											</label>
+											<div class='checkBox-reception-child-wrap'>
+												<div class='checkBox-reception-child-input-wrap'>
+													<label>
+														<input type='checkbox' name='smsCheck' id='smsCheck' class='gaibChk gaibChk4 agreeCheckBtn' value='SMS'>
+														SMS
+													</label>
+													<label>
+														<input type='checkbox' name='emailCheck' id='emailCheck' class='gaibChk gaibChk4 agreeCheckBtn' value='이메일'>
+														이메일
+													</label>
+												</div>
+												<div class='checkBox-reception-child-img-wrap'>
+													<img src='img/img_event_check_x2.png' alt=''>
+												</div>
+											</div>
+										</div>
+										<div class='checkBox-fourteen-wrap'>
+											<label>
+												<input type='checkbox' name='fourteen_chk' id='fourteen_chk' class='gaibChk agreeCheckBtn' value='본인은 만 14세 이상입니다.(필수)'>
+												본인은 만 14세 이상입니다.<span>(필수)</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class='gaibBtn-wrap'>
+									<a href='javascript:' class='gaibBtn'>가입하기</a>
+								</div>
+							</li>
+							<li>
+								<div class='footer-guide'>
+									<p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+								</div>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div id='goTopBtn-wrap'>
+				<a href='#content-wrap' class='goTopBtn'></a>
+			</div>
+		</div>
+		<div data-role='footer' id='footer'>
+			<div id='footer-wrap'>
+				<div id='footer-fixed-wrap'>
+					<div class='footer-nav'>
+						<ul class='floatclear'>
+							<li><a href='index.html'     class='footNavBtn moveBtn'><span></span></a></li>
+							<li><a href='kategorie.html' class='footNavBtn moveBtn'><span></span></a></li>
+							<li><a href='javascript:'    class='footNavBtn'><span></span></a></li>
+							<li><a href='myKurly.html'   class='footNavBtn moveBtn addFootNavBtn'><span></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

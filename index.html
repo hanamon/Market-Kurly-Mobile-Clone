@@ -1,0 +1,1240 @@
+<!DOCTYPE HTML> <!-- 웹앱 : 마켓컬리 Intro -->
+<html lang='ko'>
+<head>
+	<title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
+	
+	<meta charset='utf-8'>
+	<meta name='Viewport' 		  content='width=device-width, initial-scale=1.0'>
+	<meta name='format-detection' content='telephone=no'>
+	<meta name='Title' 		 	  content='마켓컬리'>
+	<meta name='Subject' 	 	  content='마켓컬리 웹앱'>
+	<meta name='Keywords' 	 	  content='다이어트, 식단, 닭가슴살, 요리, 치아바타, 레시피, 요리, 상차림, 다이어트음식, 이유식, 건강이유식'>
+	<meta name='Description' 	  content='샛별이 뜰 때가 가장 신선할 때! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!'>
+	<meta name='Classification'   content='인터넷 종합 쇼핑몰'>
+	<meta name='Publisher' 	 	  content='Park Hana'>
+	<meta name='Author' 	 	  content='마켓컬리'>
+	<meta name='Author-Date' 	  content='2019-09-20'>
+	<meta name='Copyright'   	  content='마켓컬리'>
+	<meta name='Location'    	  content='Seoul Korea'>
+	<meta name='Robots'   	 	  content='index, follow'>
+	
+	<link rel='shortcut icon' 	 href='img/Icon-60@2x.png'>
+	<link rel='apple-touch-icon' href='img/apple-icon-180x180.png'>
+	
+	<link rel='stylesheet' href='css/lib/jquery.mobile-1.4.5.min.css'>
+	<link rel='stylesheet' href='css/style.css'>
+	
+	<script src='js/lib/jquery-1.11.1.min.js'></script>
+	<script src='js/lib/jquery.mobile-1.4.5.min.js'></script>
+	<script src='js/lib/PHP_jQuery_Mobile_link.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+	
+	<!-- User JS file -->
+	<script src='js/script.js'></script>
+	<script src='js/section1-slide.js'></script>
+	<script src='js/section2-slide.js'></script>
+	<script src='js/section5-slide.js'></script>
+	<script src='js/section8-slide.js'></script>
+	<script src='js/section9-slide.js'></script>
+	<script src='js/section10-slide.js'></script>
+	
+	<!-- IE 하위버전 폴리필 조건 주석문 -->
+	<!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+	<![endif]-->
+	<!--[if (lte IE 8)]>
+		<script src='js/lib/html5shiv.min.js'></script>	
+		<script src='js/lib/PIE.js'></script>	
+		<script src='js/lib/jqPIE.js'></script>		
+	<![endif]-->
+</head>
+<body>
+	<!-- page1 -->
+	<div data-role='page' id='page1'>
+		<div data-role='header' id='header'>
+			<div id='header-fixed-wrap'>
+				<div class='header-banner'>
+					<h2>지금 가입하고 인기상품 <br> <i>100원</i>에 가져가세요! <i>></i></h2>
+					<span class='header-banner-colseBtn-wrap'><a href='javascript:' class='headerBannerColseBtn'></a></span>
+				</div>
+				<div class='header-bar'>
+					<span class='logoBtn-wrap'><a href='index.html'  class='logoBtn'><img src='img/mobileShopLogo.png' alt='Logo'></a></span>
+					<span class='cartBtn-wrap'><a href='javascript:' class='cartBtn'><img src='img/ico_cart.png' alt='Cart'></a></span>
+				</div>
+				<div class='header-nav'>
+					<ul class='floatclear'>
+						<li><a href='javascript:' class='mainBtn addMainBtn'>컬리추천<i class='mainBtn-bar'></i></a></li>
+						<li><a href='javascript:' class='mainBtn'>신상품 <i class='mainBtn-bar'></i></a></li>
+						<li><a href='javascript:' class='mainBtn'>베스트 <i class='mainBtn-bar'></i></a></li>
+						<li><a href='javascript:' class='mainBtn'>알뜰쇼핑<i class='mainBtn-bar'></i></a></li>
+						<li><a href='javascript:' class='mainBtn'>이벤트 <i class='mainBtn-bar'></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id='modal-search-wrap'>
+				<div id='modal-search-content-wrap'>
+					<div id='from-search-wrap'>
+						<form name='from-search' id='from-search' action='search.php' method='post'>
+							<input type='text' name='search' id='search' class='searchBox' value='' placeholder='검색어를 입력해주세요.'>
+							<span class='searchBoxCloseBtn-wrap'><a href='javascript:' class='searchBoxCloseBtn' title='Close Button'><img src='img/btn_close_333_76x76_v2.png' alt='Close Button'></a></span>
+						</form>
+					</div>
+					<div id='search-keyword-wrap'>
+						<div id='search-keyword-tab-wrap'>
+							<ul class='floatclear'>
+								<li><a href='javascript:' class='searchTabBtn addSearchTabBtn'>인기 검색어</a></li>
+								<li><a href='javascript:' class='searchTabBtn'>최근 검색어</a></li>
+							</ul>
+						</div>
+						<div class='search-keyword-LinkBtn-wrap'>
+							<ul class='floatclear'>
+								<li><a href='javascript:' class='keywordLinkBtn'>생수</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>건강식품</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>복숭아</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>생수</a></li>
+							</ul>
+						</div>
+						<div class='search-keyword-LinkBtn-wrap'>
+							<ul class='floatclear'>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-role='content' id='content'>
+			<div id='content1-wrap'>
+				<section id='section1'>
+					<h2 class='hidden'>section1</h2>
+					<div class='section1-slide-container'>
+						<ul class='section1-slide-wrap'>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-00.jpg' alt=''></a></li>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-01.jpg' alt=''></a></li>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-02.jpg' alt=''></a></li>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-03.jpg' alt=''></a></li>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-04.jpg' alt=''></a></li>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-05.jpg' alt=''></a></li>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-06.jpg' alt=''></a></li>
+							<li class='section1-slide'><a href='javascript:'><img src='img/section1-slide-07.jpg' alt=''></a></li>
+						</ul>
+						<div class='section1-page-wrap'>
+							<span class='section1-pageNum'>1</span>
+							<span>/</span>
+							<span>8</span>
+						</div>
+					</div>
+				</section>
+				<section id='section2'>
+					<div class='swipe-slide-wrap'>
+						<h2>이 상품 어때요?</h2>
+						<div class='swipe-slide-container'>
+							<div class='swipe-slide-view'>
+								<ul class='swipe-slide-wrap section2-slide-wrap floatclear'>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-00.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[FARM79] 너의 하루 7종</a>	
+												<span>3,200원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-01.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_5.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>[쎄레스] 과일 주스 7종</a>	
+												<span>4,275원</span>
+												<span><del>4,275원</del></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-02.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[매일] 소화가 잘되는 우유 2종</a>	
+												<span>3,150원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-03.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_25.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>[돌쇠] 무항생제 한우사골 (고기)곰탕</a>	
+												<span>8,700원</span>
+												<span><del>11,600원</del></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-04.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[창화루] 샤오룽바오</a>	
+												<span>8,900원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-05.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[창화루] 새우 완탕면</a>	
+												<span>8,900원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-06.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[숭의가든] 옛날 소 불고기</a>	
+												<span>13,500원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section2-slide-07.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_15.jpg' alt=''>
+												</span>		
+											</a>
+											<div>
+												<a href='javascript:'>[모노링크] 자연치즈 등심 돈까스</a>	
+												<span>10,200원</span>
+												<span><del>12,000원</del></span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id='section3'>
+					<div class='section3-wrap'>
+						<ul>
+							<li>
+								<h2 class='sec3-title'>일일특가</h2>
+								<p class='sec3-title-p'>매일 오전 11시, 베스트상품 24시간 한정특가!</p>
+							</li>
+							<li>
+								<div>
+									<a href='javascript:'>
+										<img src='img/section3-bg.jpg' alt=''>
+										<span class='sec3-save'>
+											<img src='img/icon_save_40.jpg' alt=''>
+										</span>
+										<span class='sec3-saleCounter'>
+											<i class='hour'  >22</i>
+											<i class='colon' >:</i>
+											<i class='minute'>26</i>
+											<i class='colon' >:</i>
+											<i class='scond' >23</i> 
+											<i class='text'  >남음</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<h4 class='sec3-sub-title'>[델리치오] 와규 함박스테이크</h4>
+								<p class='sec3-sub-title-p'>
+									<span>40%</span>
+									<span>7,800원</span>
+									<span>13,000원</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section id='section4'>
+					<div class='section4-wrap'>
+						<ul>
+							<li>
+								<h2>이벤트 소식</h2>
+							</li>
+							<li>
+								<div class='section4-event-content'>
+									<a href='javascript:'><img src='img/section4-00.jpg' alt=''>
+										<span>
+											<strong>설탕과 밀가루를 쓰지 않는</strong>
+											<small>제로베이커리 최대 15% 할인</small>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class='section4-event-content'>
+									<a href='javascript:'><img src='img/section4-01.jpg' alt=''>
+										<span>
+											<strong>내 몸에 선물하는 하루 휴식</strong>
+											<small>콜린스그린 최대 30% 할인 </small>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class='section4-event-content'>
+									<a href='javascript:'><img src='img/section4-02.jpg' alt=''>
+										<span>
+											<strong>일상에서 맛있게 즐기는 소고기</strong>
+											<small>일상味소 최대 15% 할인</small>
+										</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section id='section5'>
+					<div class='swipe-slide-wrap'>
+						<h2>알뜰 상품</h2>
+						<div class='swipe-slide-container'>
+							<div class='swipe-slide-view'>
+								<ul class='swipe-slide-wrap section5-slide-wrap floatclear'>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section5-slide-00.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_15.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>GAP 스테비 황도 복숭아 2kg</a>	
+												<span>13,515원</span>
+												<span class='addDelLine'>15,900원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section5-slide-01.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_10.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>[아토엔오투] 옥시젠 베이비 크림 160g</a>	
+												<span>33,120원</span>
+												<span class='addDelLine'>36,800원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section5-slide-02.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_15.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>[하티스푼] 스팀쿡야채</a>	
+												<span>3,230원</span>
+												<span class='addDelLine'>3,800원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section5-slide-03.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_20.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>[오랄비] 크로스액션 탁월한 세정력 (3개입)</a>	
+												<span>6,320원</span>
+												<span class='addDelLine'>7,900원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section5-slide-04.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_10.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>[올반] 정통 닭강정</a>	
+												<span>6,732원</span>
+												<span class='addDelLine'>7,480원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section5-slide-05.jpg' alt=''>
+												<span>
+													<img src='img/icon_save_20.jpg' alt=''>
+												</span>	
+											</a>
+											<div>
+												<a href='javascript:'>[올반] 정통 닭강정</a>	
+												<span>6,732원</span>
+												<span class='addDelLine'>7,480원</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id='section6'>
+					<div class='section6-wrap'>
+						<h2>MD의 추천</h2>
+					</div>
+				</section>
+				<section id='section7'>
+					<h2 class='hidden'>섹션7</h2>
+					<span>
+						<strong>친구초대하면 친구도 나도 5천원씩!</strong>
+						<small>2명 이상 초대 시, 5천원 더!</small>
+					</span>
+				</section>
+				<section id='section8'>
+					<div class='swipe-slide-wrap'>
+						<h2>오늘의 신상품
+							<i>매일 정오, 컬리의 새로운 상품을 만나보세요</i>
+						</h2>
+						<div class='swipe-slide-container'>
+							<div class='swipe-slide-view'>
+								<ul class='swipe-slide-wrap section8-slide-wrap floatclear'>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section8-slide-00.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[쌀집아줌마] 팥수니떡</a>	
+												<span>10,000원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section8-slide-01.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[Sea to Table] 골뱅이 무침 1인용</a>	
+												<span>14,500원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section8-slide-02.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[진가네반찬] 매콤한 진미채볶음</a>	
+												<span>3,900원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section8-slide-03.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[진가네반찬] 소고기 청양고추볶음</a>	
+												<span>6,300원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section8-slide-04.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[진가네반찬] 청양고추 장아찌</a>	
+												<span>4,800원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section8-slide-05.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[진가네반찬] 알감자 간장조림</a>	
+												<span>6,800원</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id='section9'>
+					<div class='swipe-slide-wrap'>
+						<h2>간편한 아침식사</h2>
+						<div class='swipe-slide-container'>
+							<div class='swipe-slide-view'>
+								<ul class='swipe-slide-wrap section9-slide-wrap floatclear'>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section9-slide-00.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>MY FIRST 처음 만나는 진짜 식빵</a>	
+												<span>4,900원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section9-slide-01.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[정미경키친] 달걀샌드위치 스프레드</a>	
+												<span>4,800원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section9-slide-02.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[컬리] 동물복지 백색 유정란 10구</a>	
+												<span>4,900원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section9-slide-03.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[프레지덩] 프랑스 버터 2종</a>	
+												<span>5,500원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section9-slide-04.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[상하목장] 유기농 저지방 우유 200ml*6개입 (멸균)</a>	
+												<span>7,100원</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section9-slide-05.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>[AKA] OMG 콜드브루</a>	
+												<span>13,000원</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id='section10'>
+					<div class='swipe-slide-wrap'>
+						<h2>컬리의 레시피</h2>
+						<div class='swipe-slide-container'>
+							<div class='swipe-slide-view'>
+								<ul class='swipe-slide-wrap section10-slide-wrap addSwipeText floatclear'>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section10-slide-00.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>짜장밥</a>	
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section10-slide-01.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>고등어 필렛 칠리 브루스케타</a>	
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section10-slide-02.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>바냐 카우다 </a>	
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section10-slide-03.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>앤쵸비 필렛 칠리 오일 파스타</a>	
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class='swipe-slide-content'>
+											<a href='javascrip:'>
+												<img src='img/section10-slide-04.jpg' alt=''>
+											</a>
+											<div>
+												<a href='javascript:'>오골계 전복 삼계탕</a>	
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id='section11'>
+					<h2 class='hidden'>섹션11</h2>
+					<img src='img/section11-bg.jpg' alt=''>
+				</section>
+			</div>
+			<div id='content2-wrap' class='content234-wrap'>
+				<div class='content2-menu-wrap floatclear'>
+					<div class='content2-menu1'>
+						<a href='javascript:' class='name-select-btn' title='Name Select'>샛별지역상품</a>
+						<div class='content2-menu-list'>
+							<a href='javascript:' class='content2-menu1-list-btn on' title='샛별지역상품'>샛별지역상품</a>
+							<a href='javascript:' class='content2-menu1-list-btn' title='택배지역상품'>택배지역상품</a>
+						</div>
+					</div>
+					<div class='content2-menu2'>
+						<a href='javascript:' class='name-select-btn' title='Name Select'>신상품순</a>
+						<div class='content2-menu-list'>
+							<a href='javascript:' class='content2-menu2-list-btn on' title='신상품순'>신상품순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='인기상품순'>인기상품순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='낮은 가격순'>낮은 가격순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='높은 가격순'>높은 가격순</a>
+						</div>
+					</div>
+				</div>
+				<div class='content2-item-wrap'>
+					<ul class='floatclear'>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-00.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[에센바흐 인덕텀] 도자기 편수냄비 16cm 4종</strong>
+										<i>199,000원</i><small>179,100원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_10.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-01.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[에센바흐 인덕텀] 도자기 양수냄비 18cm 4종</strong>
+										<i>229,000원</i><small>206,100원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_10.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-02.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[에센바흐 인덕텀] 도자기 양수냄비 20cm 4종</strong>
+										<i>259,000원</i><small>233,100원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_10.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-03.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[프로틴방앗간] 하루단백바</strong>
+										<i>2,500원</i><small>2,125원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_15.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-04.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[아몬드브리즈] 뉴트리플러스 프로틴 2종</strong>
+										<small>800원</small>
+									</a>
+									<span></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-05.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>하얀 대추방울토마토  750g</strong>
+										<small>8,200원</small>
+									</a>
+									<span></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-06.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[근대골목단팥빵] 크림단팥빵 삼총사</strong>
+										<small>3,000원</small>
+									</a>
+									<span></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content2-07.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[여에스더] 유산균 프로바이오틱스 블루</strong>
+										<i>38,000원</i><small>34,200원</small>
+									</a>
+									<span><i>건강기능</i></span>
+								</div>
+								<img src='img/icon_save_10.jpg' alt=''>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id='content3-wrap' class='content234-wrap'>
+				<div class='content2-menu-wrap floatclear'>
+					<div class='content2-menu1'>
+						<a href='javascript:' class='name-select-btn' title='Name Select'>샛별지역상품</a>
+						<div class='content2-menu-list'>
+							<a href='javascript:' class='content2-menu1-list-btn on' title='샛별지역상품'>샛별지역상품</a>
+							<a href='javascript:' class='content2-menu1-list-btn' title='택배지역상품'>택배지역상품</a>
+						</div>
+					</div>
+					<div class='content2-menu2'>
+						<a href='javascript:' class='name-select-btn' title='Name Select'>신상품순</a>
+						<div class='content2-menu-list'>
+							<a href='javascript:' class='content2-menu2-list-btn on' title='신상품순'>신상품순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='인기상품순'>인기상품순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='낮은 가격순'>낮은 가격순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='높은 가격순'>높은 가격순</a>
+						</div>
+					</div>
+				</div>
+				<div class='content2-item-wrap'>
+					<ul class='floatclear'>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-00.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[사미헌] 갈비탕</strong>
+										<small>11,000원</small>
+									</a>
+									<span></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-01.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[푸드렐라] 통통살 가라아게</strong>
+										<small>4,800원</small>
+									</a>
+									<span></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-02.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[삼원가든] 등심 불고기</strong>
+										<small>19,000원</small>
+									</a>
+									<span><i>Kurly only</i></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-03.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[샐러드판다] 병 샐러드 9종</strong>
+										<i>5,900원</i><small>5,605원</small>
+									</a>
+									<span><i>Kurly only</i></span>
+								</div>
+								<img src='img/icon_save_5.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-04.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[빕스] 바베큐 폭립 2종</strong>
+										<small>14,800원</small>
+									</a>
+									<span></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-05.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[미트클레버] 대구막창</strong>
+										<small>19,000원</small>
+									</a>
+									<span><i>Kurly only</i></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-06.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[삼원가든] 갈비 곰탕</strong>
+										<i>13,000원</i><small>11,700원</small>
+									</a>
+									<span><i>Kurly only</i></span>
+								</div>
+								<img src='img/icon_save_10.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content3-07.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[컬리] 동물복지 유정란 20구</strong>
+										<small>8,200원</small>
+									</a>
+									<span><i>Kurly only</i></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id='content4-wrap' class='content234-wrap'>
+				<div class='content2-menu-wrap floatclear'>
+					<div class='content2-menu1'>
+						<a href='javascript:' class='name-select-btn' title='Name Select'>샛별지역상품</a>
+						<div class='content2-menu-list'>
+							<a href='javascript:' class='content2-menu1-list-btn on' title='샛별지역상품'>샛별지역상품</a>
+							<a href='javascript:' class='content2-menu1-list-btn' title='택배지역상품'>택배지역상품</a>
+						</div>
+					</div>
+					<div class='content2-menu2'>
+						<a href='javascript:' class='name-select-btn' title='Name Select'>신상품순</a>
+						<div class='content2-menu-list'>
+							<a href='javascript:' class='content2-menu2-list-btn on' title='신상품순'>신상품순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='인기상품순'>인기상품순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='낮은 가격순'>낮은 가격순</a>
+							<a href='javascript:' class='content2-menu2-list-btn' title='높은 가격순'>높은 가격순</a>
+						</div>
+					</div>
+				</div>
+				<div class='content2-item-wrap'>
+					<ul class='floatclear'>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-00.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[데체코] 토마토 파스타소스 3종</strong>
+										<i>7,900원</i><small>3,871원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_50.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-01.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[스토리스오브그릭] 마나키 얼리하베스트 엑스트라버진(2019-2020햇올리브)</strong>
+										<i>80,000원</i><small>40,000원</small>
+									</a>
+									<span><i>Kurly only</i><i>한정수량</i></span>
+								</div>
+								<img src='img/icon_save_50.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-02.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[보노] NEW하베스트 노벨로 엑스트라버진(2019-2020 햇올리브)</strong>
+										<i>49,000원</i><small>24,500원</small>
+									</a>
+									<span><i>Kurly only</i><i>한정수량</i></span>
+								</div>
+								<img src='img/icon_save_50.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-03.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[스토리스오브그릭] 엑스트라버진 다크보틀500ml (2019-2020 햇올리브)</strong>
+										<i>80,000원</i><small>40,000원</small>
+									</a>
+									<span><i>Kurly only</i><i>한정수량</i></span>
+								</div>
+								<img src='img/icon_save_50.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-04.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[스토리스 오브 그릭] 엑스트라 버진 200ml  (2019-2020 햇올리브)</strong>
+										<i>55,000원</i><small>27,500원</small>
+									</a>
+									<span><i>Kurly only</i><i>한정수량</i></span>
+								</div>
+								<img src='img/icon_save_50.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-05.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[콜리탈리] 발사믹 8종</strong>
+										<i>10,900원</i><small>5,450원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_50.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-06.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[에센바흐 인덕텀] 도자기 편수냄비 16cm 4종</strong>
+										<i>199,000원</i><small>179,100원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_10.jpg' alt=''>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class='content2-item'>
+									<div>
+										<img src='img/content4-07.jpg' alt=''>
+										<button type='button'></button>
+									</div>
+									<a href='javascript:' title=''>
+										<strong>[에센바흐 인덕텀] 도자기 양수냄비 18cm 4종</strong>
+										<i>229,000원</i><small>206,100원</small>
+									</a>
+									<span></span>
+								</div>
+								<img src='img/icon_save_10.jpg' alt=''>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id='content5-wrap'>
+				<ul>
+					<li><a href='javascript:' title='Event'><img src='img/content5-00.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-01.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-02.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-03.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-04.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-05.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-06.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-07.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-08.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-09.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-10.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-11.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-12.jpg' alt=''></a></li>
+					<li><a href='javascript:' title='Event'><img src='img/content5-13.jpg' alt=''></a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role='footer' id='footer'>
+			<div id='footer-content-wrap'>
+				<div class='footer-list-menu-wrap'>
+					<ul>
+						<li><a href='javascript:' class='footer-list-menuBtn'>컬리소개</a></li>
+						<li><a href='javascript:' class='footer-list-menuBtn'>이용안내</a></li>
+						<li><a href='javascript:' class='footer-list-menuBtn'>배송안내</a></li>
+						<li><a href='javascript:' class='footer-list-menuBtn'>자주하는 질문</a></li>
+						<li><a href='javascript:' class='footer-list-menuBtn'>공지사항</a></li>
+						<li><a href='javascript:' class='footer-list-menuBtn'>인재채용</a></li>
+						<li><a href='javascript:' class='footer-list-menuBtn'>이용약관</a></li>
+						<li><a href='javascript:' class='footer-list-menuBtn'>개인정보처리방침</a></li>
+					</ul>
+				</div>
+				<div class='footer-list-sns-wrap'>
+					<ul>
+						<li><a href='javascript:'><img src='img/ico_instagram.png' 	alt=''></a></li>
+						<li><a href='javascript:'><img src='img/ico_fb.png' 		alt=''></a></li>
+						<li><a href='javascript:'><img src='img/ico_blog.png'		alt=''></a></li>
+						<li><a href='javascript:'><img src='img/ico_naverpost.png' 	alt=''></a></li>
+						<li><a href='javascript:'><img src='img/ico_youtube.png' 	alt=''></a></li>
+					</ul>
+				</div>
+				<div class='footer-list-customer-wrap'>
+					<h3>고객행복센터</h3>
+					<a href='javascript:'>1644-1107</a>
+					<p>365고객센터 | 오전 7시 - 오후 7시</p>
+					<p>카카오톡 <a href='javascript:'>@마켓컬리</a> 친구 추가하고 소식과 혜택을 받아보세요.</p>
+				</div>
+				<div class='footer-list-company-wrap'>
+					<address>
+						<p>주식회사 컬리 | 대표이사 : 김슬아</p>
+						<p>개인정보보호책임자 : 이지훈</p>
+						<p>사업자등록번호 : 261-81-23567 <a href='javascript:'>사업자정보 확인</a></p>
+						<p>통신판매업 : 제 2018-서울강남-01646 호</p>
+						<p>주소 : 서울특별시 강남구 도산대로 16길 20, 이래빌딩 B1~4F</p>
+						<p>입점문의 : <a href='javascript:'>입점문의하기</a></p>
+						<p>제휴문의 : <a href='javascript:'>marketing@kurlycorp.com</a></p>
+						<p>채용문의 : <a href='javascript:'>recruit@kurlycorp.com</a></p>
+						<p>팩스 : 070-7500-6098 | 이메일 : <a href='javascript:'>help@kurlycorp.com</a></p>
+						<p></p>
+					</address>
+				</div>
+				<div class='footer-list-certification-wrap'>
+					<ul>
+						<li><img src='img/logo_isms.png' alt=''></li>
+						<li>
+							<p>
+								[인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영<br>
+								[유효기간] 2019.04.01 ~ 2022.03.31
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id='footer-fixed-wrap'>
+				<div class='footer-banner'>
+					<ul class='footer-banner-wrap'>
+						<li><img src='img/ico_marketkurly.png' alt=''></li>
+						<li>
+							<p>
+								마켓컬리 앱으로 편리하게<br>
+								쇼핑하실 수 있습니다. 다운로드
+							</p>
+						</li>
+					</ul>
+					<span class='footBannerCloseBtn-wrap'>
+						<a href='javascript:' class='footBannerCloseBtn'></a>
+					</span>
+				</div>
+				<div class='footer-nav'>
+					<ul class='floatclear'>
+						<li><a href='index.html'     class='footNavBtn moveBtn addFootNavBtn'><span></span></a></li>
+						<li><a href='kategorie.html' class='footNavBtn moveBtn'><span></span></a></li>
+						<li><a href='javascript:'    class='footNavBtn'><span></span></a></li>
+						<li><a href='myKurly.html'   class='footNavBtn moveBtn'><span></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id='goTopBtn-wrap'>
+				<a href='#content' class='goTopBtn'></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

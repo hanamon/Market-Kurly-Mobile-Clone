@@ -1,0 +1,406 @@
+<!DOCTYPE HTML> <!-- 웹앱 : 마켓컬리 : 카테고리 PHP --> 
+<html lang='ko'>
+<head>
+	<title>마켓컬리 :: 카테고리</title>
+	
+	<meta charset='utf-8'>
+	<meta name='Viewport' 		  content='width=device-width, initial-scale=1.0'>
+	<meta name='format-detection' content='telephone=no'>
+	<meta name='Title' 		 	  content='마켓컬리'>
+	<meta name='Subject' 	 	  content='마켓컬리 카테고리'>
+	<meta name='Keywords' 	 	  content='다이어트, 식단, 닭가슴살, 요리, 치아바타, 레시피, 요리, 상차림, 다이어트음식, 이유식, 건강이유식'>
+	<meta name='Description' 	  content='샛별이 뜰 때가 가장 신선할 때! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!'>
+	<meta name='Classification'   content='인터넷 종합 쇼핑몰'>
+	<meta name='Publisher' 	 	  content='Park Hana'>
+	<meta name='Author' 	 	  content='마켓컬리'>
+	<meta name='Author-Date' 	  content='2019-09-26'>
+	<meta name='Copyright'   	  content='마켓컬리'>
+	<meta name='Location'    	  content='Seoul Korea'>
+	<meta name='Robots'   	 	  content='index, follow'>
+	
+	<link rel='shortcut icon' 	 href='img/Icon-60@2x.png'>
+	<link rel='apple-touch-icon' href='img/apple-icon-180x180.png'>
+	
+	<link rel='stylesheet' href='css/lib/jquery.mobile-1.4.5.min.css'>
+	<link rel='stylesheet' href='css/kategorie-style.css'>
+	
+	<script src='js/lib/jquery-1.11.1.min.js'></script>
+	<script src='js/lib/jquery.mobile-1.4.5.min.js'></script>
+	<script src='js/lib/PHP_jQuery_Mobile_link.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+	
+	<!-- User JS file -->
+	<script src='js/kategorie.js'></script>
+	
+	<!-- IE 하위버전 폴리필 조건 주석문 -->
+	<!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+	<![endif]-->
+	<!--[if (lte IE 8)]>
+		<script src='js/lib/html5shiv.min.js'></script>	
+		<script src='js/lib/PIE.js'></script>	
+		<script src='js/lib/jqPIE.js'></script>		
+	<![endif]-->
+</head>
+<body>
+	<!-- page1 -->
+	<div data-role='page' id='page1'>
+		<div data-role='header' id='header'>
+			<div id='header-fixed-wrap'>
+				<div class='header-banner'>
+					<h2>지금 가입하고 인기상품 <br> <i>100원</i>에 가져가세요! <i>></i></h2>
+					<span class='header-banner-colseBtn-wrap'><a href='javascript:' class='headerBannerColseBtn'></a></span>
+				</div>
+				<div class='header-bar'>
+					<span class='logoBtn-wrap'><a href='index.html'  class='logoBtn'><span>카테고리</span></a></span>
+					<span class='cartBtn-wrap'><a href='javascript:' class='cartBtn'><img src='img/ico_cart.png' alt='Cart'></a></span>
+				</div>
+			</div>
+			<div id='modal-search-wrap'>
+				<div id='modal-search-content-wrap'>
+					<div id='from-search-wrap'>
+						<form name='from-search' id='from-search' action='search.php' method='post'>
+							<input type='text' name='search' id='search' class='searchBox' value='' placeholder='검색어를 입력해주세요.'>
+							<span class='searchBoxCloseBtn-wrap'><a href='javascript:' class='searchBoxCloseBtn' title='Close Button'><img src='img/btn_close_333_76x76_v2.png' alt='Close Button'></a></span>
+						</form>
+					</div>
+					<div id='search-keyword-wrap'>
+						<div id='search-keyword-tab-wrap'>
+							<ul class='floatclear'>
+								<li><a href='javascript:' class='searchTabBtn addSearchTabBtn'>인기 검색어</a></li>
+								<li><a href='javascript:' class='searchTabBtn'>최근 검색어</a></li>
+							</ul>
+						</div>
+						<div class='search-keyword-LinkBtn-wrap'>
+							<ul class='floatclear'>
+								<li><a href='javascript:' class='keywordLinkBtn'>생수</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>건강식품</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>복숭아</a></li>
+								<li><a href='javascript:' class='keywordLinkBtn'>생수</a></li>
+							</ul>
+						</div>
+						<div class='search-keyword-LinkBtn-wrap'>
+							<ul class='floatclear'>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-role='content' id='content'>
+			<div id='content-wrap'>
+				<section id='section1'>
+					<h2 class='hidden'>마켓컬리 메뉴</h2>
+					<div class='section1-container'>
+						<a href='javascript:' class='productBtn' title='자주사는 상품'>자주사는 상품</a>
+					</div>
+				</section>
+				<section id='section2'>
+					<h2 class='hidden'>section2</h2>
+					<ul>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='2020 설 선물세트'><i></i><span>2020 설 선물세트</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='20만원 이상'>20만원 이상</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='10~20만원'>10~20만원</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='5~10만원'>5~10만원</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='3만원 미만'>3만원 미만</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='채소'><i></i><span>채소</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='기본채소'>기본채소</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='쌈·샐러드·간편채소'>쌈·샐러드·간편채소</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='브로콜리·특수채소'>브로콜리·특수채소</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='콩나물·버섯류'>콩나물·버섯류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='양파·마늘·생강·파'>양파·마늘·생강·파</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='시금치·부추·나물'>시금치·부추·나물</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='파프리카·피망·고추'>파프리카·피망·고추</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='과일·견과·쌀'><i></i><span>과일·견과·쌀</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='국산과일'>국산과일</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='수입과일'>수입과일</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='냉동·건과일'>냉동·건과일</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='견과류'>견과류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='쌀·잡곡'>쌀·잡곡</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='수산·해산·건어물'><i></i><span>수산·해산·건어물</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='생선류'>생선류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='오징어·낙지·문어'>오징어·낙지·문어</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='새우·게·랍스터'>새우·게·랍스터</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='해산물·조개류'>해산물·조개류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='수산가공품'>수산가공품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='김·미역·해조류'>김·미역·해조류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='건어물·다시팩'>건어물·다시팩</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='정육·계란'><i></i><span>정육·계란</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='소고기'>소고기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='돼지고기'>돼지고기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='계란류'>계란류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='닭·오리고기'>닭·오리고기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='양념육·돈까스'>양념육·돈까스</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='양고기'>양고기</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='국·반찬·메인요리'><i></i><span>국·반찬·메인요리</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='국·탕·찌개'>국·탕·찌개</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='밑반찬'>밑반찬</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='김치·장아찌·젓갈'>김치·장아찌·젓갈</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='두부·어묵·부침개'>두부·어묵·부침개</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='햄·소시지·통조림'>햄·소시지·통조림</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='샐러드·간편식'><i></i><span>샐러드·간편식</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='샐러드·도시락'>샐러드·도시락</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='간편식·냉동식품'>간편식·냉동식품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='밥류·면식품·즉석식품'>밥류·면식품·즉석식품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='선식·시리얼·그래놀라'>선식·시리얼·그래놀라</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='만두·튀김·떡볶이'>만두·튀김·떡볶이</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='죽·스프'>죽·스프</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='면·양념·오일'><i></i><span>면·양념·오일</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='파스타·면류'>파스타·면류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='밀가루·가루·믹스'>밀가루·가루·믹스</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='향신료·소스·드레싱'>향신료·소스·드레싱</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='양념·액젓·장류'>양념·액젓·장류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='소금·설탕·식초·꿀'>소금·설탕·식초·꿀</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='식용유·참기름·오일'>식용유·참기름·오일</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='음료·우유·떡·간식'><i></i><span>음료·우유·떡·간식</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='생수·음료·주스'>생수·음료·주스</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='커피·차'>커피·차</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='우유·두유·요거트'>우유·두유·요거트</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='아이스크림'>아이스크림</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='떡·한과'>떡·한과</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='간식·과자·쿠키'>간식·과자·쿠키</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='초콜릿·젤리·캔디'>초콜릿·젤리·캔디</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='베이커리·치즈·델리'><i></i><span>베이커리·치즈·델리</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='식빵·빵류'>식빵·빵류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='잼·버터·스프레드'>잼·버터·스프레드</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='케이크·파이·디저트'>케이크·파이·디저트</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='치즈'>치즈</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='건조육'>건조육</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='올리브·피클·델리'>올리브·피클·델리</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='건강식품'><i></i><span>건강식품</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='건강즙·건강음료'>건강즙·건강음료</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='홍삼·인삼·꿀'>홍삼·인삼·꿀</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='영양제'>영양제</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='유산균'>유산균</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='건강분말·건강환'>건강분말·건강환</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='유아동'>유아동</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='생활용품'><i></i><span>생활용품</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='휴지·티슈·위생용품'>휴지·티슈·위생용품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='세제·청소용품'>세제·청소용품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='인테리어소품'>인테리어소품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='의약외품·마스크'>의약외품·마스크</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='생활잡화·문구'>생활잡화·문구</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='헤어·바디케어'>헤어·바디케어</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='스킨케어'>스킨케어</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='구강케어·면도용품'>구강케어·면도용품</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='주방용품'><i></i><span>주방용품</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='주방소모품'>주방소모품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='주방·조리도구'>주방·조리도구</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='냄비·팬류'>냄비·팬류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='식기류'>식기류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='컵·와인잔·사케잔'>컵·와인잔·사케잔</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='차·커피도구'>차·커피도구</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='가전제품'><i></i><span>가전제품</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='주방가전'>주방가전</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='생활가전'>생활가전</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='베이비·키즈'><i></i><span>베이비·키즈</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='분유·간편 이유식'>분유·간편 이유식</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='이유식 재료'>이유식 재료</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='유아·어린이 음식'>유아·어린이 음식</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='간식·음료·건강식품'>간식·음료·건강식품</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='유아용품·젖병·식기류'>유아용품·젖병·식기류</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='기저귀·물티슈'>기저귀·물티슈</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='목욕·세제·위생용품'>목욕·세제·위생용품</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href='javascript:' class='mainMenuBtn' title='반려동물'><i></i><span>반려동물</span></a>
+							<ul class='subMenu-hidden-box'>
+								<li><a href='javascript:' class='subMenuBtn' title='전체보기'>전체보기</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='강아지 간식'>강아지 간식</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='강아지 주식'>강아지 주식</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='고양이 간식'>고양이 간식</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='고양이 주식'>고양이 주식</a></li>
+								<li><a href='javascript:' class='subMenuBtn' title='반려동물 용품'>반려동물 용품</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section id='section3'>
+					<h2>컬리의 추천</h2>
+					<div class='section3-container'>
+						<ul class='floatclear'>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='즐거운 간식'>
+									<img src='img/section3-00.jpg' alt='즐거운 간식'>
+									<span>즐거운 간식</span>
+								</a>
+							</li>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='간편한 아침식사'>
+									<img src='img/section3-01.jpg' alt='간편한 아침식사'>
+									<span>간편한 아침식사</span>
+								</a>
+							</li>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='오프라인 맛집'>
+									<img src='img/section3-02.jpg' alt='오프라인 맛집'>
+									<span>오프라인 맛집</span>
+								</a>
+							</li>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='컬리가 만든 상품'>
+									<img src='img/section3-03.jpg' alt='컬리가 만든 상품'>
+									<span>컬리가 만든 상품</span>
+								</a>
+							</li>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='반찬가게'>
+									<img src='img/section3-04.jpg' alt='반찬가게'>
+									<span>반찬가게</span>
+								</a>
+							</li>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='제철 음식'>
+									<img src='img/section3-05.jpg' alt='제철 음식'>
+									<span>제철 음식</span>
+								</a>
+							</li>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='생활 필수품'>
+									<img src='img/section3-06.jpg' alt='생활 필수품'>
+									<span>생활 필수품</span>
+								</a>
+							</li>
+							<li>
+								<a href='javascript:' class='recommend_Btn' title='브랜드관'>
+									<img src='img/section3-07.jpg' alt='브랜드관'>
+									<span>브랜드관</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div data-role='footer' id='footer'>
+			<div id='footer-fixed-wrap'>
+				<div class='footer-nav'>
+					<ul class='floatclear'>
+						<li><a href='index.html'     class='footNavBtn moveBtn'><span></span></a></li>
+						<li><a href='kategorie.html' class='footNavBtn moveBtn addFootNavBtn'><span></span></a></li>
+						<li><a href='javascript:'    class='footNavBtn'><span></span></a></li>
+						<li><a href='myKurly.html'   class='footNavBtn moveBtn'><span></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id='goTopBtn-wrap'>
+				<a href='#content-wrap' class='goTopBtn'></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+@charset "utf-8"; /* myKurly-style.css*/
+
+@import url("fonts.css");
+@import url("reset.css");
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#member1{background:#fff;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#member1 #header{width:100%;margin:0;padding:0;border:0;background:#fff;}
+#member1 #header #header-wrap{width:100%;}
+/* 헤더 : 팝업창 */
+#member1 #header #header-wrap #header-popup{position:relative;width:100%;border-bottom:1px solid #f4f4f4;box-sizing:border-box;text-align:center;}
+#member1 #header #header-wrap #header-popup p{display:inline-block;font-size:14px;color:#333;font-weight:300;padding:9.5px 30px;text-shadow:none;background:url(../img/btn_arrow_333_76x76.png) no-repeat 100% 50%;background-size:auto 100%;}
+#member1 #header #header-wrap #header-popup p br{display:none;}
+#member1 #header #header-wrap #header-popup p i{color:#5f0080;font-weight:600;}
+#member1 #header #header-wrap #header-popup span.hPopupCloseBt-wrap{position:absolute;top:0;right:0;width:37px;height:37px;}
+#member1 #header #header-wrap #header-popup span.hPopupCloseBt-wrap a{display:block;}
+#member1 #header #header-wrap #header-popup span.hPopupCloseBt-wrap a img{width:100%;}
+/* 헤더 : 타이틀 */
+#member1 #header #header-wrap #header-title-wrap{position:relative;width:100%;height:50px;text-align:center;}
+#member1 #header #header-wrap #header-title-wrap .header-title{position:relative;font-size:16px;color:#333;font-weight:600;padding:15px 50px;box-sizing:border-box;text-shadow:none;}
+#member1 #header #header-wrap #header-title-wrap .winCloseBtn-wrap{position:absolute;top:0;left:0;}
+#member1 #header #header-wrap #header-title-wrap .winCloseBtn-wrap a{display:block;width:50px;height:50px;}
+#member1 #header #header-wrap #header-title-wrap .winCloseBtn-wrap a img{width:100%;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#member1 #content{width:100%;margin:0;padding:0;border:0;background:#fff;}
+#member1 #content #content-wrap{width:100%;}
+/* 컨텐츠 : 네비버튼 */
+#member1 #content #content-wrap #nav-wrap{width:100%;}
+#member1 #content #content-wrap #nav-wrap ul{width:100%;}
+#member1 #content #content-wrap #nav-wrap ul li{float:left;width:50%;height:45px;text-align:center;}
+#member1 #content #content-wrap #nav-wrap ul li a{display:block;width:100%;height:100%;font-size:14px;color:#666;font-weight:400;padding-top:12px;border-bottom:1px solid #ccc;box-sizing:border-box;text-shadow:none;}
+#member1 #content #content-wrap #nav-wrap ul li a.addNavBtn{color:#5f0080;border-bottom:3px solid #5f0080;}
+/* 컨텐츠 : 폼 (회원 입력상자, 체크박스 버튼 그룹) */
+#member1 #content #content-wrap #form-wrap{width:100%;}
+#member1 #content #content-wrap #form-wrap #member{width:100%;}
+#member1 #content #content-wrap #form-wrap #member .form-member{padding:30px 20px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li{padding-bottom:10px;}
+/* input text box : (아이디, 비밀번호) */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.text-wrap{width:100%;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.text-wrap div{font-size:0;margin:0;padding:0;border:0;border-radius:0;box-shadow:none;background:none;}/* hidden 요소 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.text-wrap div input.textBox{width:100%;height:50px;font-size:14px;line-height:16px;padding:5px 15px;border:1px solid #ccc;box-sizing:border-box;border-radius:5px;text-shadow:none;background:#fff;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.text-wrap div input.textBox::placeholder{font-size:14px;color:#bbb;font-weight:300;}
+/* input check box : (아이디저장, 자동로그인, 보안접속) */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap{width:100%;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-left{float:left;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-left div{position:relative;margin:0;height:16px;}/* hidden 요소 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-left div input.checkBox{position:absolute;top:0;left:0;margin:0;width:16px;height:16px;border:1px solid #ccc;border-radius:3px;box-sizing:border-box;background:#fff;-webkit-appearance:none;appearance:none;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-left div input.checkBox.addCheck:after{position:absolute;top:-1px;left:-1px;content:'';display:inline-block;width:16px;height:16px;border:1px solid #5f0080;border-radius:3px;box-sizing:border-box;background:url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-left div label{position:relative;display:inline-block;font-size:13px;color:#666;font-weight:400;line-height:16px;margin:0;padding:0 0 0 20px;border:0;text-shadow:none;background:transparent;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-left div label:after{content:'';display:none;}
+
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right{float:right;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-1{float:left;margin-right:15px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-1 div{position:relative;margin:0;height:16px;}/* hidden 요소 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-1 div input.checkBox{position:absolute;top:0;left:0;margin:0;width:16px;height:16px;border:1px solid #ccc;border-radius:3px;box-sizing:border-box;background:#fff;-webkit-appearance:none;appearance:none;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-1 div input.checkBox.addCheck:after{position:absolute;top:-1px;left:-1px;content:'';display:block;width:16px;height:16px;border:1px solid #5f0080;border-radius:3px;box-sizing:border-box;background:url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-1 div label{position:relative;display:inline-block;font-size:13px;color:#666;font-weight:400;line-height:16px;margin:0;padding:0 0 0 20px;border:0;text-shadow:none;background:transparent;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-1 div label:after{content:'';display:none;}
+
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-2{float:left;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-2 div{position:relative;margin:0;height:16px;}/* hidden 요소 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-2 div input.checkBox{position:absolute;top:0;left:0;margin:0;width:16px;height:16px;border:1px solid #ccc;border-radius:3px;box-sizing:border-box;background:#fff;-webkit-appearance:none;appearance:none;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-2 div input.checkBox.addCheck:after{position:absolute;top:-1px;left:-1px;content:'';display:block;width:16px;height:16px;border:1px solid #5f0080;border-radius:3px;box-sizing:border-box;background:url(../img/ico_checkbox_checked.png) no-repeat 50% 50%;background-size:16px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-2 div label{position:relative;display:inline-block;font-size:13px;color:#666;font-weight:400;line-height:16px;margin:0;padding:0 0 0 20px;border:0;text-shadow:none;background:transparent;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.checkBox-wrap .checkBox-right .checkBox-right-2 div label:after{content:'';display:none;}
+
+/* 로그인 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.loginBtn-wrap{width:100%;margin-top:20px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.loginBtn-wrap button.loginBtn{font-size:16px;color:#fff;font-weight:400;line-height:48px;border:1px solid #5f0081;border-radius:3px;margin:0;padding:0;box-shadow:none;text-shadow:none;background:#5f0081;}
+/* 아이디, 비밀번호 찾기 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.idpsSearchBtn-wrap{text-align:center;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.idpsSearchBtn-wrap i{display:inline-block;width:1px;height:15px;margin:15px 0;background:#666;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.idpsSearchBtn-wrap span{display:inline-block;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.idpsSearchBtn-wrap span a{display:block;font-size:13px;color:#666;font-weight:400;line-height:15px;padding:15px 5px;text-shadow:none;}
+/* 회원가입 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.gaibBtn-wrap{width:100%;text-align:center;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.gaibBtn-wrap span{display:inline-block;font-size:13px;color:#666;padding-top:20px;text-shadow:none;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.gaibBtn-wrap a{display:block;font-size:13px;color:#5f0081;font-weight:400;padding-left:5px;text-decoration:underline;text-shadow:none;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.gaibBtn-wrap button.gaibBtn{font-size:16px;color:#5f0081;font-weight:400;line-height:48px;border:1px solid #5f0081;border-radius:3px;margin:0;padding:0;box-shadow:none;text-shadow:none;background:#fff;}
+/* 주문확인 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.orderBtn-wrap{width:100%;margin-top:20px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.orderBtn-wrap button.orderBtn{font-size:16px;color:#fff;font-weight:400;line-height:48px;border:1px solid #5f0081;border-radius:3px;margin:0;padding:0;box-shadow:none;text-shadow:none;background:#5f0081;}
+/* 비회원구매 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.unMemberBtn-wrap{width:100%;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.unMemberBtn-wrap button.unMemberBtn{font-size:16px;color:#5f0081;font-weight:400;line-height:48px;border:1px solid #5f0081;border-radius:3px;margin:0;padding:0;box-shadow:none;text-shadow:none;background:#fff;}
+/* (아이디/비밀번호 찾기) 확인 버튼 */
+#member1 #content #content-wrap #form-wrap #member .form-member li div.okBtn-wrap{width:100%;margin-top:20px;}
+#member1 #content #content-wrap #form-wrap #member .form-member li div.okBtn-wrap button.okBtn{font-size:16px;color:#fff;font-weight:400;line-height:48px;border:1px solid #5f0081;border-radius:3px;margin:0;padding:0;box-shadow:none;text-shadow:none;background:#5f0081;}
+
+/* 회원, 비회원 텝 메뉴 */
+#form-member1{display:block;}
+#form-member2{display:none;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#member1 #footer{width:100%;margin:0;padding:0;border:0;}
+#member1 #footer #footer-wrap{width:100%;height:0;}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width:500px){
+	#member1 #header #header-wrap #header-popup p{padding:9.5px 50px;background:url(../img/btn_arrow_333_76x76.png) no-repeat 100% 50%;background-size:auto 100%;}
+	#member1 #header #header-wrap #header-popup p br{display:block;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
