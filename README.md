@@ -2,6 +2,6 @@
 
 Market Kurly Mobile Web pages clone coding (HTML, CSS, JS, PHP)
 
-Production URL : https://hanamon.github.io/Market-Kurly-Mobile-Clone/
+Production URL : https://hanamon.kr/Project-2019/Market-Kurly-Mobile-Clone/
 
 Made in 2019

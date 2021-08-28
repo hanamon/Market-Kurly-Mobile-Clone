@@ -124,29 +124,3 @@ $(function(){ //section1-slide.js
 	}
 	
 }); //section1-slide.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

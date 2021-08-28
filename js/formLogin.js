@@ -37,30 +37,3 @@ $(function(){ //formLogin.js
 	});
 	
 }); //formLogin.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

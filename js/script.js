@@ -96,41 +96,12 @@ $(function(){ //script.js
 	
 	// 컨텐츠2
 	$('.name-select-btn').on({
-		 click: function(){
-			 $(this).toggleClass('addMenuList');
-			 $(this).parent().find('.content2-menu-list').toggleClass('addMenuList');
-		 }
-	 });
+		click: function(){
+			$(this).toggleClass('addMenuList');
+			$(this).parent().find('.content2-menu-list').toggleClass('addMenuList');
+		}
+	});
 
 /*----------------------------------------------------------------------------------------------*/	
 
 }); //script.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

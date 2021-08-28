@@ -23,13 +23,3 @@ header,main,footer,nav,aside,address{display:block;}
 	#skip>li{width:100%;}
 	#skip>li>a{display:block;width:100%;font-size:0;padding:0;color:#fff;text-align:center;background:#000;}
 	#skip>li>a:focus{font-size:20px;padding:25px 0;}
-
-
-
-
-
-
-
-
-
-

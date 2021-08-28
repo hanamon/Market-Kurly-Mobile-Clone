@@ -1,5 +1,4 @@
 $(function(){ //ajaxPHPSQL.js
-	
 	var txtId 				 = '';  // 아이디(필수)
 	var txtPass 			 = '';  // 비밀번호(필수)
 	var txtPassChk 			 = '';  // 비밀번호 확인(필수)
@@ -54,26 +53,24 @@ $(function(){ //ajaxPHPSQL.js
 					url: 'response.php', // sql 입력문 작업할 파일 file
 					type: 'POST',
 					data: {
-						
-						id  	 			: txtId,	
-						pass	 			: txtPass,
+						id  	 				: txtId,	
+						pass	 				: txtPass,
 						passCheck			: txtPassChk,
-						name				: txtName,
-						email				: txtEmail,		
+						name					: txtName,
+						email					: txtEmail,		
 						inNumber			: txtTel,			
 						birthYear			: txtBirthYear,	
-						birthMonth			: txtBirthMonth,	
+						birthMonth		: txtBirthMonth,	
 						birthDate			: txtBirthDate,	
 						gender				: txtGender,	
 						addInput			: txtAddInput,		
 						
-						agrmt_chk			: txtAgrmt_chk,		 
-						private_chk			: txtPrivate_chk,		 
+						agrmt_chk					: txtAgrmt_chk,		 
+						private_chk				: txtPrivate_chk,		 
 						consentCheckValue	: txtConsentCheckValue, 
-						smsCheck			: txtSmsCheck,			 	
-						emailCheck			: txtEmailCheck,
-						fourteen_chk		: txtFourteen_chk		 
-						
+						smsCheck					: txtSmsCheck,			 	
+						emailCheck				: txtEmailCheck,
+						fourteen_chk			: txtFourteen_chk
 					},
 					success: function(data){
 						alert( '회원가입에 성공하셨습니다.');
@@ -107,38 +104,3 @@ $(function(){ //ajaxPHPSQL.js
 	});
 	
 }); //ajaxPHPSQL.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

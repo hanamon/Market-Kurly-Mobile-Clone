@@ -24,50 +24,17 @@ $(function(){ //section10-slide.js
 		swipeleft: function(){
 			cnt++;
 			if(cnt>3){
-			   cnt=3.5;
+				cnt=3.5;
 			}
 			$('.section10-slide-wrap').stop().animate({left: -((cnt*slideW)+20) },500);
 		},
 		swiperight: function(){
 			cnt--;
 			if(cnt<0){
-			   cnt=0;
+				cnt=0;
 			}
 			$('.section10-slide-wrap').stop().animate({left: -(cnt*slideW) },500);
 		}
 	});
 	
 }); //section10-slide.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
